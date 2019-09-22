@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/img_it"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_it"
+        android:textSize="20sp"
+        android:text="title"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/img_it"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg_it"
+        android:text="msg"
+        android:textStyle="italic"
+        android:layout_toRightOf="@id/img_it"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title_it"
+        android:layout_toLeftOf="@id/btn_it"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_it"
+        android:layout_below="@id/title_it"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:text="关注"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape"
+        android:minHeight="30dp"
+        android:minWidth="50dp" />
+
+</RelativeLayout>

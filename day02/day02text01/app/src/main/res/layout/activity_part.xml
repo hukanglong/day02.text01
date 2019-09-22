@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PartActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/img_part"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_part"
+        android:text="关注"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_bright"
+        android:minWidth="50dp"
+        android:minHeight="30dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/tab"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/author_part"
+        android:text="123"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/img_part"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_part"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/img_part"
+        android:layout_below="@id/author_part"
+        android:text="123132"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg_part"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/img_part"
+        android:layout_below="@id/title_part"
+        android:text="123132"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"
+        android:layout_below="@id/img_part"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp"
+        android:layout_below="@id/tab"/>
+
+</RelativeLayout>
